@@ -48,6 +48,14 @@ public class CustomStringMethods {
             return myString.toUpperCase();
         } else return myString.toLowerCase();
     }
+
+    public String starBetween(String myString) {
+        String str = "";
+        for (int i = 0; i < myString.length(); i++) {
+            str += myString.charAt(i) + "*";
+        }
+        return str.substring(0, str.length() - 1);
+    }
 }
   
   
